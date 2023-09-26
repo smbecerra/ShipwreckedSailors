@@ -52,20 +52,20 @@ class Search():
                    (SA1_CORNERS[0] + 3, SA1_CORNERS[1] + 15),
                     cv.FONT_HERSHEY_PLAIN, 1, 0)
         cv.rectangle(self.img, (SA2_CORNERS[0], SA2_CORNERS[1]),
-                     SA2_CORNERS[2], SA2_CORNERS[3], (0, 0, 0), 1)
+                     (SA2_CORNERS[2], SA2_CORNERS[3]), (0, 0, 0), 1)
         cv.putText(self.img, '2',
                    (SA2_CORNERS[0] + 3, SA2_CORNERS[1] + 15),
                     cv.FONT_HERSHEY_PLAIN, 1, 0)
         cv.rectangle(self.img, (SA3_CORNERS[0], SA3_CORNERS[1]),
-                     SA3_CORNERS[2], SA3_CORNERS[3], (0, 0, 0), 1)
-        cv.putText(self.img, '2',
+                     (SA3_CORNERS[2], SA3_CORNERS[3]), (0, 0, 0), 1)
+        cv.putText(self.img, '3',
                    (SA3_CORNERS[0] + 3, SA3_CORNERS[1] + 15),
                     cv.FONT_HERSHEY_PLAIN, 1, 0)
         
         cv.putText(self.img, '+', (last_known),
                    cv.FONT_HERSHEY_PLAIN, 1, (0, 0, 255))
         cv.putText(self.img, '+ = Last Known Position', (274, 355),
-                   cv.FONT_HERSHEY_PLAIN, 1 (0, 0, 255))
+                   cv.FONT_HERSHEY_PLAIN, 1, (0, 0, 255))
         cv.putText(self.img, '* = Actual Position', (275, 370),
                    cv.FONT_HERSHEY_PLAIN, 1, (255, 0, 0))
         
